@@ -1,15 +1,18 @@
 /middleware/.classpath
 /middleware/.project
+/middleware/.settings
 /middleware/target
 /middleware/target-eclipse
 
 /surveyor/.classpath
 /surveyor/.project
+/surveyor/.settings
 /surveyor/target
 /surveyor/target-eclipse
 
 /provider/.classpath
 /provider/.project
+/provider/.settings
 /provider/target
 /provider/target-eclipse
 
