@@ -24,12 +24,12 @@ task integrationTest(type: Test) {
     include '**/*IntegrationTest*'
     doFirst {
         jettyRun.contextPath = '/';
-        jettyRun.httpPort = 9090    // Port for test
+        jettyRun.httpPort = 9292    // Port for test
         jettyRun.daemon = true
         jettyRun.execute()
     }
     doLast {
-        jettyStop.stopPort = 9091   // Port for stop signal
+        jettyStop.stopPort = 9922   // Port for stop signal
         jettyStop.stopKey = 'stopKey'
         jettyStop.execute()
     }
