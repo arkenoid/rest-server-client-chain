@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE configuration
+    PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+  <settings>
+    <setting name="cacheEnabled" value="false"/>
+    <setting name="lazyLoadingEnabled" value="true"/>
+    <setting name="multipleResultSetsEnabled" value="true"/>
+    <setting name="useColumnLabel" value="true"/>
+    <setting name="defaultExecutorType" value="SIMPLE"/>
+    <setting name="defaultStatementTimeout" value="25000"/>
+  </settings>
+
+
+<!--    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC">
+                <property name="" value=""/>
+            </transactionManager>
+            <dataSource type="UNPOOLED">
+                <property name="driver" value="oracle.jdbc.driver.OracleDriver"/>
+                <property name="url" value="jdbc:oracle:thin:@localhost:1521:xe"/>
+                <property name="username" value="mdm"/>
+                <property name="password" value="mdm"/>
+            </dataSource>
+        </environment>
+    </environments>-->
+
+  <environments default="development">
+    <environment id="development">
+      <transactionManager type="JDBC">
+        <property name="" value=""/>
+      </transactionManager>
+      <dataSource type="UNPOOLED">
+      
+<!--
+      	<property name ="data_source" value="java:LiferayPortletPool"/>
+-->
+         <property name="driver" value="oracle.jdbc.driver.OracleDriver"/>
+         <property name="url" value="jdbc:oracle:thin:@localhost:1521:xe"/>
+         <property name="username" value="djpcm_prod"/>
+         <property name="password" value="mdmx"/>
+      </dataSource>
+    </environment>
+  </environments>
+
+  <mappers>
+    <mapper resource="id/go/djp/cm/bridge/sidjp/xml/MasterJenisPemeriksaanMapper.xml" />
+    <mapper resource="id/go/djp/cm/bridge/sidjp/xml/MasterJenisSuratMapper.xml" />
+  </mappers>
+
+</configuration>

@@ -1,0 +1,13 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>id.go.djp.cm</groupId>
+  <artifactId>sidjp-djpcm</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <name>SIDJP DJPCM</name>
+  <description>maven project to integrate sidjp core db to expose service for djpcm to invoke</description>
+  <modules>
+  	<module>sidjp-model</module>
+  	<module>djpcm-bridge</module>
+  </modules>
+</project>

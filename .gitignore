@@ -17,3 +17,5 @@
 /provider/target-eclipse
 
 .project
+
+/gradle/.settings
